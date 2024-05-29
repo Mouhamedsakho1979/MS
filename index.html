@@ -1,169 +1,916 @@
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>
-      Mouhamed Sakho
-    </title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <h1>
-        <span class="material-symbols-outlined">
-          magic_button
-        </span>
-        Mouhamed Sakho
-      </h1>
-      <ul>
-        <li>
-          sakhomouhamed305@gmail.com
-          <span class="material-symbols-outlined">
-            call_made
-          </span>
-        </li>
-        <li id="dark-light-mode" onclick="changeDarkMode()">Dark mode</li>
-      </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouhamed Sakho | portfolio</title>
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+    <!--icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <!-- main -->
+        <main>
+        
+    <!-- sidebar -->
+            <aside class="sidebar" data-sidebar>
+
+                <div class="sidebar-info">
+
+                    <figure class="avtar-box">
+                        <img src="img/my-avatar.png" width="80">
+                    </figure>
+
+                    <div class="info-contents">
+                        <h1 class="name" title="Rajat soni">Mouhamed Sakho</h1>
+                        <p class="title">Web Developer and App programmer</p>
+                    </div>
+
+                    <button class="info-more-btn" data-sidebar-btn>
+                        <span>Show Contacts</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <div class="sidebar-info-more">
+                    <div class="separator"></div>
+                    <ul class="contact-list">
+
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Email</p>
+                                <a href="#" class="contact-link">sakhomouhamed305@gmail.com</a>
+                            </div>
+                        </li>
+
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Phone</p>
+                                <a href="#" class="contact-link">+221 78 562 27 55</a>
+                            </div>
+                        </li>
+
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-calendar-day"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Birthday</p>
+                               <time datetime="1997-06-16">January 1, 2001</time>
+                            </div>
+                        </li>
+
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Location</p>
+                                <address>Sénégal, Dakar, Rufisque</address>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <div class="separator"></div>
+
+                    <ul class="social-list">
+
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </aside>
+
+    <!-- main content -->
+
+    <div class="main-content">
+
+    <!-- navbar -->
+
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>blog</button>
+            </li>
+
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+        </ul>
     </nav>
 
-    <header>
-      <div class="header-left">
-        <small
-          ><span class="material-symbols-outlined">
-            home_pin
-          </span>
-          Dakar Senegal</small
-        >
-        <h1>Hello,<br/> je suis Mouhamed Sakho</h1>
-        <p>
-          je suis un Sénégalais de 22 ans, passionné de programmation.
-         En tant que développeur polyvalent, je maîtrise tous les domaines de la programmation. 
-         Mon expertise se concentre sur le développement d'applications et de sites web. Mon objectif est de créer des solutions numériques innovantes pour simplifier la vie des utilisateurs. 
-         Bienvenue dans mon univers numérique.
-        </p>
+    <!-- about -->
 
-        <div class="links">
-          <a href="">
-            Email
-            <span class="material-symbols-outlined">
-              call_made
-            </span></a
-          >
-          <a href="">
-            LinkedIn
-            <span class="material-symbols-outlined">
-              call_made
-            </span></a
-          >
-          <a href=""
-            >Curriculum
-            <span class="material-symbols-outlined">
-              call_made
-            </span></a
-          >
+    <article class="about active" data-page="about">
+
+        <header>
+            <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+            <p>
+                I am a passionate web developer and application programmer with several years of experience creating innovative digital solutions.
+                 Having worked on a variety of projects ranging from dynamic websites to sophisticated mobile applications, I have gained deep expertise in HTML, CSS, JavaScript, as well as modern frameworks like React, Angular, and Vue.js.
+            </p>
+            <p>
+                My mission is to develop efficient, secure and user-friendly applications that meet the specific needs of my clients.
+                As a committed professional, I ensure to stay updated with the latest technological trends and continually improve my skills to deliver superior quality solutions.
+            </p>
+        </section>
+
+    
+
+    <!-- service -->
+
+    <section class="service">
+        <h3 class="h3 service-title">What i'm doing</h3>
+        <ul class="service-list">
+            <li class="service-item">
+                <div class="service-icon-box">
+                    <img src="img/icon-design.svg" alt="design icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Web Design</h4>
+                    <p class="service-item-text"> The most modern and high-quality design made at a professional level.
+                    </p>
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box">
+                    <img src="img/icon-dev.svg" alt="web development icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Web Development</h4>
+                    <p class="service-item-text"> The most modern and high-quality design made at a professional level.
+                    </p>
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box">
+                    <img src="img/icon-app.svg" alt="Mobile app icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Mobile Apps</h4>
+                    <p class="service-item-text"> Professional development of applications for iOS and Android.
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box">
+                    <img src="img/icon-photo.svg" alt="camera icon" width="40">
+                </div>
+
+                <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Photography</h4>
+                    <p class="service-item-text">  I make high-quality photos of any category at a professional level.
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- testmonials -->
+
+    <section class="testimonials">
+
+        <h3 class="h3 testimonials-title">Testimonials</h3>
+
+        <ul class="testimonials-list has-scrollbar">
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+
+              <figure class="testimonials-avatar-box">
+                <img src="img/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Abdou Sakho</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                    Mouhamed Sakho developed our company's e-commerce website. His attention to detail and user-friendly designs exceeded our expectations. 
+                    He was professional and responsive throughout the project, ensuring all our needs were met.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+
+              <figure class="testimonials-avatar-box">
+                <img src="img/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Astou Sall</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                    Mouhamed was instrumental in revamping our mobile app. His innovative approach and technical expertise significantly enhanced the user experience. 
+                    We're extremely satisfied with the outcome and recommend his services highly
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+
+              <figure class="testimonials-avatar-box">
+                <img src="img/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily Diouf</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                    Mouhamed Sakho created a custom web application for our business. 
+                    His ability to understand complex requirements and deliver a seamless solution was impressive. We appreciated his dedication and clear communication.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+
+              <figure class="testimonials-avatar-box">
+                <img src="img/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Papa Doudou Seck programmer in SDP</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                    Working with Mouhamed Sakho on our new corporate website was a pleasure. 
+                    His extensive knowledge and creative solutions brought our vision to life. 
+                    His commitment to client satisfaction is evident in the quality of his work.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </section>
+    
+    <!-- testimonials modal -->
+
+    <div class="modal-container" data-modal-container>
+
+        <div class="overlay" data-overlay></div>
+
+        <section class="testimonials-modal">
+
+          <button class="modal-close-btn" data-modal-close-btn>
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+              <img src="img/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+            </figure>
+
+            <img src="img/icon-quote.svg" alt="quote icon">
+          </div>
+
+          <div class="modal-content">
+
+            <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+            <time datetime="2021-06-14">14 June, 2021</time>
+
+            <div data-modal-text>
+              <p>
+                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                lot of experience
+                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                consectetur adipiscing
+                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+              </p>
+            </div>
+
+          </div>
+
+        </section>
         </div>
-      </div>
-      <div class="header-right">
-        <img
-          src="img2.jpg"
-          alt="profile-photo"
-        />
-      </div>
+
+    <!-- CLIENT -->
+
+    <section class="clients">
+        <h3 class="h3 clients-title">Clients</h3>
+        <ul class="clients-list has-scrollbar">
+            
+            <li class="clients-items"> 
+                <a href="#">
+                    <img src="img/logo-1-color.png" alt="client logo">
+                </a>
+            </li>
+
+            <li class="clients-items"> 
+                <a href="#">
+                    <img src="img/logo-2-color.png" alt="client logo">
+                </a>
+            </li>
+
+            <li class="clients-items"> 
+                <a href="#">
+                    <img src="img/logo-3-color.png" alt="client logo">
+                </a>
+            </li>
+
+            <li class="clients-items"> 
+                <a href="#">
+                    <img src="img/logo-4-color.png" alt="client logo">
+                </a>
+            </li>
+
+            <li class="clients-items"> 
+                <a href="#">
+                    <img src="img/logo-5-color.png" alt="client logo">
+                </a>
+            </li>
+
+            <li class="clients-items"> 
+                <a href="#">
+                    <img src="img/logo-6-color.png" alt="client logo">
+                </a>
+            </li>
+        </ul>
+    </section>
+   </article>
+
+  <!-- resume -->
+
+  <article class="resume" data-page="resume">
+
+    <header>
+        <h2 class="h2 article-title">Resume</h2>
     </header>
 
-    <section class="about">
-      <h4>À propos de moi</h4>
-      <p>
-        Bonjour, je suis Mouhamed Sakho, un programmeur et développeur web passionné, à la tête du groupe SDP (Software Development Professionals).
-        Avec une passion profonde pour la technologie et une expertise dans le développement d'applications et de sites web, je suis déterminé à transformer des idées en solutions numériques exceptionnelles.
-        Mon parcours dans le monde de la programmation m'a permis de maîtriser divers langages et technologies, me permettant ainsi de relever des défis techniques, de résoudre des problèmes complexes et de créer des produits informatiques de haute qualité. 
-        À travers SDP, nous collaborons avec des clients et des entreprises pour répondre à leurs besoins en développement web, d'applications et en programmation sur mesure.
-        <br /><br />
-        En tant qu'ingénieur en intelligence artificielle, je suis déterminé à rester à la pointe de cette technologie en constante évolution. 
-        J'adore relever de nouveaux défis et explorer de nouvelles opportunités pour appliquer l'IA dans divers domaines.
-        Si vous cherchez à intégrer l'intelligence artificielle dans votre projet, que ce soit pour automatiser des tâches, améliorer l'efficacité ou obtenir des informations exploitables à partir de vos données, je suis là pour vous aider.
-        N'hésitez pas à me contacter pour discuter de vos besoins en développement ou en intelligence artificielle.
-      </p>
+    <section class="timeline">
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
 
-      <img
-        class="signature"
-        alt="signature"
-        src="https://upload.wikimedia.org/wikipedia/commons/2/27/Narf_signature.png"
-      />
+            <h3 class="h3">Education</h3>
+        </div>
+
+        <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">OpenClassrooms</h4>
+                <span>2020 - 2021</span>
+                <p class="timeline-text">
+                    I obtained a certificate in "Object Oriented Programming with Python" on OpenClassrooms. 
+                    This training allowed me to master the principles of OOP, create classes, and implement objects to develop robust and modular Python applications.
+                </p>
+            </li>
+
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">OpenClassrooms</h4>
+                <span>2021 - 2022</span>
+                <p class="timeline-text">
+                    I have successfully completed the course "Create your website with HTML5 and CSS3" on OpenClassrooms. 
+                    There I learned to design and develop modern and responsive websites using the latest HTML5 and CSS3 techniques and standards.
+                </p>
+            </li>
+
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">OpenClassrooms</h4>
+                <span>2023 - Present</span>
+                <p class="timeline-text">
+                    I obtained a certificate in "Programming in Java and Dart" on OpenClassrooms. 
+                    This program provided me with the skills needed to develop successful applications in Java and Dart, covering fundamental concepts as well as advanced techniques.
+                </p>
+            </li>
+
+        </ol>
     </section>
 
-    <section class="images">
-      <div class="image-card">
-        <div class="image-left">
-          <img
-            src="https://c.pxhere.com/images/ac/ad/794e0e6840c6f72e52d14d0159a6-1451093.jpg!d"
-            alt="pxhere"
-          />
-        </div>
-        <div class="image-right">
-          <h1>La fondation de SDP</h1>
-          <p>
-            Chez SDP, nous sommes bien plus qu'une équipe de développeurs. 
-            SDP est un groupe de développeurs web, d'experts en application mobile et de programmeurs passionnés par la technologie.
-            Notre équipe talentueuse est dédiée à la création d'expériences numériques exceptionnelles.
-            Nous relevons les défis techniques, résolvons des problèmes complexes et exploitons les dernières technologies pour réaliser des projets sur mesure.
-            Que vous ayez besoin d'un site web, d'une application ou de solutions de programmation, nous sommes là pour faire de vos idées une réalité numérique.
-          </p>
-        </div>
-      </div>
+    <section class="timeline">
 
-      <div class="image-card">
-        <div class="image-left">
-          <img
-            src="https://cdni.russiatoday.com/rbthmedia/images/2018.06/article/5b17a42215e9f9322a027044.jpg"
-            alt="parcs"
-          />
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3 class="h3">Experience</h3>
         </div>
-        <div class="image-right">
-          <h1>La visite de plusieurs parcs</h1>
-          <p>
-            Nous sommes passionnés par la découverte de la beauté de la nature à travers nos voyages à travers différents parcs. 
-            Notre équipe d'explorateurs est déterminée à partager ces expériences exceptionnelles avec vous. 
-            Que vous soyez un amoureux de la nature chevronné ou que vous souhaitiez simplement échapper à la routine quotidienne, nos visites de parcs offrent une opportunité unique de vous reconnecter à la nature. 
-            Rejoignez-nous dans cette aventure passionnante à travers des paysages à couper le souffle, des rencontres avec la faune et la flore, et des souvenirs inoubliables. Venez explorer le monde avec nous !
-          </p>
-        </div>
-      </div>
 
-      <div class="image-card">
-        <div class="image-left">
-          <img
-            src="https://www.iim.fr/ecole-web/wp-content/uploads/2021/06/ada-1.jpg"
-            alt="microsoft"
-          />
-        </div>
-        <div class="image-right">
-          <h1>Associations solidaires</h1>
-          <p>
-           L'Association Solidère, au cœur de notre engagement communautaire, œuvre avec dévouement pour créer un impact positif dans notre société. 
-           Forts de notre passion pour le changement social, nous rassemblons des individus et des ressources pour soutenir des causes qui comptent. 
-           Nous croyons en la force de la solidarité pour faire avancer des projets humanitaires, environnementaux et éducatifs.
-            Notre objectif est de construire un monde meilleur, un pas à la fois. Rejoignez-nous dans notre mission de solidarité et d'harmonie pour un avenir plus brillant.
-          </p>
-        </div>
-      </div>
+        <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Creative director</h4>
+                <span>2020 - 2021</span>
+                <p class="timeline-text">
+                    As an applications programmer, I have developed bespoke software solutions for various industries, including e-commerce and data management. 
+                    I have solid expertise in Python, Java and Dart, which allows me to create high-performance and scalable applications.
+                </p>
+            </li>
+
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Art director </h4>
+                <span>2021 - 2022</span>
+                <p class="timeline-text">
+                    With over five years of experience as a web developer, I have worked on a variety of projects ranging from showcase sites to complex web applications. 
+                    I am proficient in front-end technologies like HTML, CSS, JavaScript, as well as modern frameworks like React and Angular.
+                </p>
+            </li>
+
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web designer</h4>
+                <span>2023 - Present</span>
+                <p class="timeline-text">
+                    My experience in full stack development has allowed me to manage projects end-to-end, from back-end to front-end. 
+                    I am proficient in Node.js, Express, and MongoDB for server-side development, as well as Vue.js and Bootstrap for user interface design, ensuring smooth and efficient integration between client and server.
+                </p>
+            </li>
+        </ol>
     </section>
 
-    <footer>
-      <h3>
-        <span class="material-symbols-outlined">
-          magic_button
-        </span>
-        Mouhamed Sakho
-      </h3>
+    <!-- skill -->
 
-      <p>&copy; Mouhamed Sakho 2023</p>
-    </footer>
+    <section class="skills">
+        <h3 class="h3 skills-title">My skills</h3>
 
+        <ul class="skills-list content-card">
+            
+            <li class="skills-item">
+                <div class="title-wrapper">
+                    <h5 class="h5">Web design</h5>
+                    <data value="85">85%</data>
+                </div>
+
+                <div class="skills-progress-bg">
+                    <div class="skills-progress-fill" style="width: 80%;"></div>
+                </div>
+            </li>
+
+            <li class="skills-item">
+                <div class="title-wrapper">
+                    <h5 class="h5">Wed developement</h5>
+                    <data value="85">72%</data>
+                </div>
+
+                <div class="skills-progress-bg">
+                    <div class="skills-progress-fill" style="width: 72%;"></div>
+                </div>
+            </li>
+
+            <li class="skills-item">
+                <div class="title-wrapper">
+                    <h5 class="h5">programmer</h5>
+                    <data value="85">90%</data>
+                </div>
+
+                <div class="skills-progress-bg">
+                    <div class="skills-progress-fill" style="width: 90%;"></div>
+                </div>
+            </li>
+
+            <li class="skills-item">
+                <div class="title-wrapper">
+                    <h5 class="h5">Flutterflow</h5>
+                    <data value="85">50%</data>
+                </div>
+
+                <div class="skills-progress-bg">
+                    <div class="skills-progress-fill" style="width: 50%;"></div>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+  </article>
+
+  <!-- portfolio -->
+
+  <article class="portfolio" data-page="portfolio">
+
+    <header>
+        <h2 class="h2 article-title">Portfolio</h2>
+    </header>
+
+    <section class="projects">
+
+        <ul class="filter-list">
+
+            <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>Web developement</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>Games</button>
+            </li>
+        </ul>
+
+        <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+                <div class="select-valu" data-select-value>Select category</div>
+
+                <div class="select-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+            </button>
+
+            <ul class="select-list">
+
+                <li class="select-item">
+                    <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>Web developement</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>Games</button>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="web developement">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+
+                        <img src="img/project-1.png" loading="lazy">
+                    </figure> 
+                    <h3 class="project-title">Nixie Tube Clock</h3>
+                    <p class="project-category">Web developement</p>
+                </a>
+            </li>
+
+            
+            <li class="project-item active" data-filter-item data-category="games">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+
+                        <img src="img/project-2.png" loading="lazy">
+                    </figure> 
+                    <h3 class="project-title">Tic-Tac-Toe</h3>
+                    <p class="project-category">Games</p>
+                </a>
+            </li>
+
+            
+            <li class="project-item active" data-filter-item data-category="web developement">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+
+                        <img src="img/project-3.png" loading="lazy">
+                    </figure> 
+                    <h3 class="project-title">Toast Notification</h3>
+                    <p class="project-category">Web developement</p>
+                </a>
+            </li>
+
+            
+            <li class="project-item active" data-filter-item data-category="web design">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+
+                        <img src="img/project-4.png" loading="lazy">
+                    </figure> 
+                    <h3 class="project-title">Product Page</h3>
+                    <p class="project-category">Web design</p>
+                </a>
+            </li>
+
+            
+            <li class="project-item active" data-filter-item data-category="web design">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+
+                        <img src="img/project-5.png" loading="lazy">
+                    </figure> 
+                    <h3 class="project-title">Amazon prime video</h3>
+                    <p class="project-category">Web design</p>
+                </a>
+            </li>
+
+            
+            <li class="project-item active" data-filter-item data-category="web games">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+
+                        <img src="img/project-6.png" loading="lazy">
+                    </figure> 
+                    <h3 class="project-title">Flip a coin</h3>
+                    <p class="project-category">Games</p>
+                </a>
+            </li>
+
+            
+            <li class="project-item active" data-filter-item data-category="applications">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+
+                        <img src="img/project-7.png" loading="lazy">
+                    </figure> 
+                    <h3 class="project-title">Age calculator</h3>
+                    <p class="project-category">Applications</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web design">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+
+                        <img src="img/project-8.png" loading="lazy">
+                    </figure> 
+                    <h3 class="project-title">Light house</h3>
+                    <p class="project-category">Web design</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="applications">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+
+                        <img src="img/project-9.png" loading="lazy">
+                    </figure> 
+                    <h3 class="project-title">Calender</h3>
+                    <p class="project-category">Applications</p>
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+  </article>
+
+  <!-- blog -->
+
+  <article class="blog" data-page="blog">
+
+    <header>
+        <h2 class="h2 article-title">Blog</h2>
+    </header>
+
+    <section class="blog-posts">
+
+        <ul class="blog-posts-list">
+
+            <li class="blog-posts-item">
+                <a href="#">
+                    <figure class="blog-banner-box">
+                        <img src="img/blog-1.jpg" loading="lazy">
+                    </figure>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <p class="blog-category">Design</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-02-23">Feb 23, 2024</time>
+                        </div>
+                        <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                        <p class="blog-text">Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="blog-posts-item">
+                <a href="#">
+                    <figure class="blog-banner-box">
+                        <img src="img/blog-2.jpg" loading="lazy">
+                    </figure>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <p class="blog-category">Design</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-02-23">Feb 23, 2024</time>
+                        </div>
+                        <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                        <p class="blog-text">Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="blog-posts-item">
+                <a href="#">
+                    <figure class="blog-banner-box">
+                        <img src="img/blog-3.jpg" loading="lazy">
+                    </figure>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <p class="blog-category">Design</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-02-23">Feb 23, 2024</time>
+                        </div>
+                        <h3 class="h3 blog-item-title">Design digest #80</h3>
+                        <p class="blog-text">Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="blog-posts-item">
+                <a href="#">
+                    <figure class="blog-banner-box">
+                        <img src="img/blog-4.jpg" loading="lazy">
+                    </figure>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <p class="blog-category">Design</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-02-23">Feb 23, 2024</time>
+                        </div>
+                        <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                        <p class="blog-text"> Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="blog-posts-item">
+                <a href="#">
+                    <figure class="blog-banner-box">
+                        <img src="img/blog-5.jpg" loading="lazy">
+                    </figure>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <p class="blog-category">Design</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-02-23">Feb 23, 2024</time>
+                        </div>
+                        <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                        <p class="blog-text">Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="blog-posts-item">
+                <a href="#">
+                    <figure class="blog-banner-box">
+                        <img src="img/blog-6.jpg" loading="lazy">
+                    </figure>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <p class="blog-category">Design</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-02-23">Feb 23, 2024</time>
+                        </div>
+                        <h3 class="h3 blog-item-title">Design digest #79</h3>
+                        <p class="blog-text">Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+
+  </article>
+
+  <!-- contact -->
+
+  <article class="contact" data-page="contact">
+
+    <header >
+        <h2 class="h2 article-title">Contact</h2>
+    </header>
+
+    <section class="mapbox" data-mapbox>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15432.797761514816!2d-17.293263818088348!3d14.72236816667757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec174d8cbabc70f%3A0x2ac5f15c04a3996e!2sRufisque%2C%20Senegal!5e0!3m2!1sen!2ssn!4v1714286092267!5m2!1sen!2ssn"
+             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <section class="contact-form">
+        <h3 class="h3 form-title">Contact Form</h3>
+
+        <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full Name" required data-form-input>
+                <input type="text" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" required data-form-input></textarea>
+
+            <button class="form-btn" type="Submit" disabled data-form-btn>
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+            </button>
+        </form>
+
+    </section>
+
+  </article>
+
+
+    </div>
+        </main>
+
+
+    <!--js link-->
     <script src="script.js"></script>
-  </body>
+</body>
+</html>
